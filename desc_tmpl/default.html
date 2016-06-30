@@ -1,0 +1,44 @@
+<p align="center">
+<font color="#005a89" size="7" face="Arial">NEW ${cfg['type'].upper()|h}S ${cfg['Brand'].upper()|h} ${cfg['Style'].upper()|h}</font>
+</p>
+
+%if cfg['name']:
+<p align="center">
+<font color="#875735" size="7" face="Arial">${cfg['name'].upper()|h}</font>
+</p>
+%endif
+
+<p align="center"><font face="Arial" color="#ff0010" size="7">NEW WITH TAG</font></p>
+
+%if js['desc']:
+<p align="center" width=800 style="background-color:#f2f2f2;border:1px solid #b2b2b2;width:800px;margin:0 auto 0 auto;padding:5px">
+<font color="#333" size="3" face="Arial">${js['desc']|h}</font>
+</p>
+%endif
+
+<p align="center">
+%if cfg['Brand'].lower() == 'abercrombie & fitch':
+
+%if cfg['type'].lower() == 'men':
+<img alt="${cfg['Brand'].upper()|h} mens size chart" src="http://img.pkdev.net/ebay/anf-sizecharts-mens-tops.jpg">
+%else:
+<img alt="${cfg['Brand'].upper()|h} womens size chart" src="http://img.pkdev.net/ebay/anf-sizecharts-womens-tops.jpg">
+%endif
+
+%elif cfg['Brand'].lower() == 'hollister':
+
+%if cfg['type'].lower() == 'men':
+<img alt="${cfg['Brand'].upper()|h} mens size chart" src="http://img.pkdev.net/ebay/hol-sizecharts-dudes-tops.jpg">
+%else:
+<img alt="${cfg['Brand'].upper()|h} womens size chart" src="http://img.pkdev.net/ebay/hol-sizecharts-bettys-tops.jpg">
+%endif
+
+%endif
+
+</p>
+
+<p align="center">
+%for i in range( len(js['data']) ):
+<img alt="${cfg['Brand'].upper()|h} ${cfg['Style'].upper()|h} ${cfg['name'].upper()|h} ${js['data'][i][1].upper()|h}" src="${img[js['data'][i][0]]['alt']|h}"><br>
+%endfor
+</p>

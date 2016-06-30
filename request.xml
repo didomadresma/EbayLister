@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Request xmlns="urn:ebay:apis:eBLBaseComponents">
+<DetailLevel>ReturnAll</DetailLevel>
+<Item>
+
+<AutoPay>true</AutoPay>
+
+<BuyerRequirementDetails>
+<ShipToRegistrationCountry>true</ShipToRegistrationCountry>
+</BuyerRequirementDetails>
+
+<ConditionID>1000</ConditionID>
+<Country>US</Country>
+<Currency>USD</Currency>
+
+<DispatchTimeMax>1</DispatchTimeMax>
+<GetItFast>false</GetItFast>
+
+<GiftIcon>0</GiftIcon>
+<HitCounter>BasicStyle</HitCounter>
+
+<ListingDuration>Days_30</ListingDuration>
+<ListingType>FixedPriceItem</ListingType>
+
+<Location>San Francisco, California</Location>
+<PostalCode>94133</PostalCode>
+
+<PaymentMethods>PayPal</PaymentMethods>
+<PayPalEmailAddress></PayPalEmailAddress>
+
+<PostCheckoutExperienceEnabled>false</PostCheckoutExperienceEnabled>
+
+<PrimaryCategory><CategoryID></CategoryID></PrimaryCategory>
+
+<PrivateListing>false</PrivateListing>
+
+<ReturnPolicy>
+<ReturnsAcceptedOption>ReturnsNotAccepted</ReturnsAcceptedOption>
+<ReturnsAccepted>No returns accepted</ReturnsAccepted>
+</ReturnPolicy>
+
+<ShippingDetails>
+
+<SalesTax>
+<SalesTaxPercent>0.0</SalesTaxPercent>
+<ShippingIncludedInTax>false</ShippingIncludedInTax>
+</SalesTax>
+
+<ShippingServiceOptions>
+<ShippingService>ShippingMethodStandard</ShippingService>
+<FreeShipping>false</FreeShipping>
+<ShippingServiceCost currencyID="USD">0.0</ShippingServiceCost>
+<ShippingServiceAdditionalCost currencyID="USD">0.0</ShippingServiceAdditionalCost>
+<ShippingServicePriority>1</ShippingServicePriority>
+</ShippingServiceOptions>
+
+<InternationalShippingServiceOption>
+<ShippingService>StandardInternational</ShippingService>
+<ShippingServiceCost currencyID="USD">0.0</ShippingServiceCost>
+<ShippingServiceAdditionalCost currencyID="USD">0.0</ShippingServiceAdditionalCost>
+<ShippingServicePriority>1</ShippingServicePriority>
+<ShipToLocation>Worldwide</ShipToLocation>
+</InternationalShippingServiceOption>
+
+<ShippingType>Flat</ShippingType>
+<ShippingDiscountProfileID>0</ShippingDiscountProfileID>
+<InternationalShippingDiscountProfileID>0</InternationalShippingDiscountProfileID>
+<ExcludeShipToLocation>Africa</ExcludeShipToLocation>
+<ExcludeShipToLocation>Middle East</ExcludeShipToLocation>
+<ExcludeShipToLocation>South America</ExcludeShipToLocation>
+
+</ShippingDetails>
+
+<ShipToLocations>US</ShipToLocations>
+<Site>US</Site>
+
+<ListingDesigner><LayoutID>10000</LayoutID><ThemeID>10</ThemeID></ListingDesigner>
+
+<Title></Title>
+<Description></Description>
+
+<PictureDetails>
+<GalleryType>Gallery</GalleryType>
+<PhotoDisplay>PicturePack</PhotoDisplay>
+<PictureSource>EPS</PictureSource>
+<GalleryURL></GalleryURL>
+<PictureURL></PictureURL>
+</PictureDetails>
+
+<ItemSpecifics></ItemSpecifics>
+
+<Variations>
+
+<Pictures><VariationSpecificName>Color</VariationSpecificName></Pictures>
+
+<VariationSpecificsSet>
+<NameValueList><Name>Color</Name></NameValueList>
+<NameValueList><Name>Size</Name></NameValueList>
+</VariationSpecificsSet>
+
+</Variations>
+
+</Item>
+</Request>
